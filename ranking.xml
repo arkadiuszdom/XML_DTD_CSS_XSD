@@ -1,0 +1,35 @@
+<?xml version="1.0" standalone="no" ?>
+<!DOCTYPE ranking SYSTEM "ranking.dtd">
+<?xml-stylesheet type="text/css" href="ranking.css" ?>
+<ranking>
+	<positions>
+		<position>
+			<number>
+				1
+			</number>
+			<name>
+				Game1
+			</name>
+			<genreName>
+				FPS
+			</genreName>
+			<rating>
+				5.0
+			</rating>
+			<age>
+				18+
+			</age>
+			<releaseDate>
+				12.05.2018
+			</releaseDate>
+		</position>
+	</positions>
+	<genres>
+		<genre genreId="1">
+			<icon/>
+			<name>
+				FPS
+			</name>
+		</genre>
+	</genres>
+</ranking>
