@@ -1,0 +1,37 @@
+<!DOCTYPE ranking
+[
+<!ELEMENT ranking (header,genres,positions)>
+
+	<!ELEMENT header (task_name,author+)>
+		<!ELEMENT task_name (#PCDATA)>
+
+		<!ELEMENT author (#PCDATA)>
+
+
+	<!ELEMENT genres (genre*)>
+
+		<!ELEMENT genre (#PCDATA)>
+		<!ATTLIST genre genre_id ID #REQUIRED>
+
+	<!ELEMENT positions (position*)>
+
+		<!ELEMENT position (number,name,genreName,rating,age,releaseDate,predecessor?)>
+
+			<!ELEMENT number (#PCDATA)>
+			<!ATTLIST number top_three ID #IMPLIED>
+
+			<!ELEMENT name (#PCDATA)>
+
+			<!ELEMENT genreName (#PCDATA)>
+			<!ATTLIST genreName genre_id IDREF #REQUIRED>
+			<!ATTLIST genreName color NMTOKEN "black">
+
+			<!ELEMENT rating (#PCDATA)>
+
+			<!ELEMENT age (#PCDATA)>
+			<!ATTLIST age minimum (12|16|18) #REQUIRED>
+
+			<!ELEMENT releaseDate (#PCDATA)>
+
+			<!ELEMENT predecessor (name)>
+]>

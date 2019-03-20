@@ -7,30 +7,31 @@
 		<author>Arkadiusz Domrat</author>
 		<author>Krzysztof Gonicki</author>
 	</header>
-		<genres>
-			<genre genre_id="rpg">RPG</genre>
-			<genre genre_id="akcji">Akcji</genre>
-			<genre genre_id="przygodowe">Przygodowe</genre>
-			<genre genre_id="wyscigi">Wyscigi</genre>
-			<genre genre_id="strategiczne">Strategiczne</genre>
-			<genre genre_id="symulacje">Symulacje</genre>
-		</genres>
+
+	<genres>
+		<genre genre_id="rpg">RPG</genre>
+		<genre genre_id="akcji">Akcji</genre>
+		<genre genre_id="przygodowe">Przygodowe</genre>
+		<genre genre_id="wyscigi">Wyscigi</genre>
+		<genre genre_id="strategiczne">Strategiczne</genre>
+		<genre genre_id="symulacje">Symulacje</genre>
+	</genres>
 	
 	<positions>
 		<position>
-			<number>
+			<number top_three="no1">
 				1
 			</number>
 			<name>
 				Witcher 3: blood and wine
 			</name>
-			<genreName>
+			<genreName genre_id="rpg">
 				RPG
 			</genreName>
 			<rating>
 				9.8
 			</rating>
-			<age>
+			<age minimum="18">
 				18+
 			</age>
 			<releaseDate>
@@ -39,19 +40,19 @@
 		</position>
 		
 		<position>
-			<number>
+			<number top_three="no2">
 				2
 			</number>
 			<name>
 				Grad Theft Auto V
 			</name>
-			<genreName>
+			<genreName genre_id="akcji" color="blue">
 				Akcji
 			</genreName>
 			<rating>
 				9.6
 			</rating>
-			<age>
+			<age minimum="18">
 				18+
 			</age>
 			<releaseDate>
@@ -60,19 +61,19 @@
 		</position>
 		
 		<position>
-			<number>
+			<number top_three="no3">
 				3
 			</number>
 			<name>
 				Stories Untold
 			</name>
-			<genreName>
+			<genreName genre_id="przygodowe" color="blue">
 				Przygodowe
 			</genreName>
 			<rating>
 				9.6
 			</rating>
-			<age>
+			<age minimum="18">
 				18+
 			</age>
 			<releaseDate>
@@ -87,13 +88,13 @@
 			<name>
 				Witcher 3: hearts of stone
 			</name>
-			<genreName>
+			<genreName genre_id="rpg">
 				RPG
 			</genreName>
 			<rating>
 				9.5
 			</rating>
-			<age>
+			<age minimum="18">
 				18+
 			</age>
 			<releaseDate>
@@ -108,18 +109,23 @@
 			<name>
 				Witcher 3: wild hunt
 			</name>
-			<genreName>
+			<genreName genre_id="rpg">
 				RPG
 			</genreName>
 			<rating>
 				9.4
 			</rating>
-			<age>
+			<age minimum="18">
 				18+
 			</age>
 			<releaseDate>
 				19.05.2015
 			</releaseDate>
+			<predecessor>
+				<name>
+					Witcher 2
+				</name>
+			</predecessor>
 		</position>
 		
 		<position>
@@ -129,18 +135,23 @@
 			<name>
 				The Elder Scrolls V: Skyrim
 			</name>
-			<genreName>
+			<genreName genre_id="rpg">
 				RPG
 			</genreName>
 			<rating>
 				9.4
 			</rating>
-			<age>
+			<age minimum="18">
 				18+
 			</age>
 			<releaseDate>
 				11.11.2011
 			</releaseDate>
+			<predecessor>
+				<name>
+					The Elder Scrolls IV: Oblivion
+				</name>
+			</predecessor>
 		</position>
 		
 		<position>
@@ -150,13 +161,13 @@
 			<name>
 				Red Dead Redemtion 2
 			</name>
-			<genreName>
+			<genreName genre_id="akcji" color="orange">
 				Akcji
 			</genreName>
 			<rating>
 				9.4
 			</rating>
-			<age>
+			<age minimum="18">
 				18+
 			</age>
 			<releaseDate>
@@ -171,14 +182,14 @@
 			<name>
 				Forza Horizon
 			</name>
-			<genreName>
+			<genreName genre_id="wyscigi" color="blue">
 				Wyscigi
 			</genreName>
 			<rating>
 				9.4
 			</rating>
-			<age>
-				18+
+			<age minimum="16">
+				16+
 			</age>
 			<releaseDate>
 				27.09.2016
@@ -192,13 +203,13 @@
 			<name>
 				Mafia: The City of Lost Heaven
 			</name>
-			<genreName>
+			<genreName genre_id="akcji" color="red">
 				Akcji
 			</genreName>
 			<rating>
 				9.4
 			</rating>
-			<age>
+			<age minimum="18">
 				18+
 			</age>
 			<releaseDate>
@@ -213,13 +224,13 @@
 			<name>
 				The Walking Dead: A Telltale Games Series - Season One
 			</name>
-			<genreName>
+			<genreName genre_id="przygodowe" color="green">
 				Przygodowe
 			</genreName>
 			<rating>
 				9.4
 			</rating>
-			<age>
+			<age minimum="18">
 				18+
 			</age>
 			<releaseDate>
@@ -228,13 +239,4 @@
 		</position>
 	</positions>
 	
-	
-<!--	<genres>
-		<genre genreId="1">
-			<icon/>
-			<name>
-				FPS
-			</name>
-		</genre>
-	</genres>-->
 </ranking>
