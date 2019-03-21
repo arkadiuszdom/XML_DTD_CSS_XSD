@@ -76,7 +76,7 @@
 			<rating>
 				9.6
 			</rating>
-			<age minimum="not classified">
+			<age minimum="not_classified">
 				not classified
 			</age>
 			<releaseDate>
@@ -306,7 +306,7 @@
 			<rating>
 				9.3
 			</rating>
-			<age minimum="18">
+			<age minimum="not_classified">
 				not classified
 			</age>
 			<releaseDate>
