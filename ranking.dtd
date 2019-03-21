@@ -15,10 +15,13 @@
 
 	<!ELEMENT positions (position*)>
 
-		<!ELEMENT position (number,name,genreName,rating,age,releaseDate,predecessor?)>
+		<!ELEMENT position (number,poster,name,genreName,rating,age,releaseDate,predecessor?)>
 
 			<!ELEMENT number (#PCDATA)>
 			<!ATTLIST number top_three ID #IMPLIED>
+
+			<!ELEMENT poster EMPTY>
+			<!ATTLIST poster poster_id ID #REQUIRED>
 
 			<!ELEMENT name (#PCDATA)>
 
@@ -29,7 +32,7 @@
 			<!ELEMENT rating (#PCDATA)>
 
 			<!ELEMENT age (#PCDATA)>
-			<!ATTLIST age minimum (12|16|18) #REQUIRED>
+			<!ATTLIST age minimum (not_classified|3|7|12|16|18) "not_classified">
 
 			<!ELEMENT releaseDate (#PCDATA)>
 
