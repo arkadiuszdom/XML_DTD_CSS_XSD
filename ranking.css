@@ -2,11 +2,11 @@
 
 ranking{
 	margin: auto;
+	font-family: sans-serif;
 }
 
 header{
 	font-size: 40px;
-	font-family: monospace;
 	display: block;
 	text-align: center;
 	margin: auto;
@@ -23,8 +23,54 @@ genres{
 	display: none;
 }
 
-position{
+positions{
 	display: block;
-	font-family: monospace;
+	background-color: #F43F3F;
+	width: 80%;
+	text-align: center;
+	margin-top: 4%;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+positions > position, name {
+	display: block;
 	font-size: 20px;
+}
+
+positions > position:hover{
+	background-color: #F11111;
+	cursor: pointer;
+}
+
+position > releaseDate{
+	letter-spacing: 1px;
+	word-spacing: 1px;
+}
+
+position > number{
+	text-align: left;
+	display: list-item;
+	list-style: none;
+	padding-left: 70px;
+}
+
+number::after{
+	content:".";
+}
+
+position > age::before{
+	content: "PEGI: ";
+}
+
+position > genreName::before{
+	content: "genre: ";
+}
+
+position > rating::before{
+	content: "rating on gry-online.pl: ";
+}
+
+position > releaseDate::before{
+	content: "release date: "
 }
