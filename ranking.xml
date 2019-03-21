@@ -3,20 +3,20 @@
 <?xml-stylesheet type="text/css" href="ranking.css" ?>
 <ranking>
 	<header>
-		<task_name>Ranking top 30 gier wszechczasow portalu gry-online.pl</task_name>
+		<task_name>Top 30 games of all time on gry-online.pl</task_name>
 		<author>Arkadiusz Domrat</author>
 		<author>Krzysztof Gonicki</author>
 	</header>
 
 	<genres>
 		<genre genre_id="rpg">RPG</genre>
-		<genre genre_id="akcji">Akcji</genre>
-		<genre genre_id="przygodowe">Przygodowe</genre>
-		<genre genre_id="wyscigi">Wyscigi</genre>
-		<genre genre_id="strategiczne">Strategiczne</genre>
-		<genre genre_id="symulacje">Symulacje</genre>
+		<genre genre_id="action">Action</genre>
+		<genre genre_id="adventure">Adventure</genre>
+		<genre genre_id="race">Race</genre>
+		<genre genre_id="strategic">Strategic</genre>
+		<genre genre_id="simulation">Simulation</genre>
 	</genres>
-	
+
 	<positions>
 		<position>
 			<number top_three="no1">
@@ -38,7 +38,7 @@
 				31.05.2016
 			</releaseDate>
 		</position>
-		
+
 		<position>
 			<number top_three="no2">
 				2
@@ -46,8 +46,8 @@
 			<name>
 				Grad Theft Auto V
 			</name>
-			<genreName genre_id="akcji" color="blue">
-				Akcji
+			<genreName genre_id="action" color="blue">
+				Action
 			</genreName>
 			<rating>
 				9.6
@@ -59,7 +59,7 @@
 				17.09.2013
 			</releaseDate>
 		</position>
-		
+
 		<position>
 			<number top_three="no3">
 				3
@@ -67,20 +67,20 @@
 			<name>
 				Stories Untold
 			</name>
-			<genreName genre_id="przygodowe" color="blue">
-				Przygodowe
+			<genreName genre_id="adventure" color="blue">
+				Adventure
 			</genreName>
 			<rating>
 				9.6
 			</rating>
-			<age minimum="18">
-				18+
+			<age minimum="not classified">
+				not classified
 			</age>
 			<releaseDate>
 				27.02.2017
 			</releaseDate>
 		</position>
-		
+
 				<position>
 			<number>
 				4
@@ -101,7 +101,7 @@
 				13.10.2015
 			</releaseDate>
 		</position>
-		
+
 		<position>
 			<number>
 				5
@@ -127,7 +127,7 @@
 				</name>
 			</predecessor>
 		</position>
-		
+
 		<position>
 			<number>
 				6
@@ -153,7 +153,7 @@
 				</name>
 			</predecessor>
 		</position>
-		
+
 		<position>
 			<number>
 				7
@@ -161,8 +161,8 @@
 			<name>
 				Red Dead Redemtion 2
 			</name>
-			<genreName genre_id="akcji" color="orange">
-				Akcji
+			<genreName genre_id="action" color="orange">
+				Action
 			</genreName>
 			<rating>
 				9.4
@@ -174,7 +174,7 @@
 				26.10.2018
 			</releaseDate>
 		</position>
-		
+
 		<position>
 			<number>
 				8
@@ -182,20 +182,20 @@
 			<name>
 				Forza Horizon
 			</name>
-			<genreName genre_id="wyscigi" color="blue">
-				Wyscigi
+			<genreName genre_id="race" color="blue">
+				Race
 			</genreName>
 			<rating>
 				9.4
 			</rating>
-			<age minimum="16">
-				16+
+			<age minimum="3">
+				3+
 			</age>
 			<releaseDate>
 				27.09.2016
 			</releaseDate>
 		</position>
-		
+
 		<position>
 			<number>
 				9
@@ -203,8 +203,8 @@
 			<name>
 				Mafia: The City of Lost Heaven
 			</name>
-			<genreName genre_id="akcji" color="red">
-				Akcji
+			<genreName genre_id="action" color="red">
+				Action
 			</genreName>
 			<rating>
 				9.4
@@ -216,7 +216,7 @@
 				29.08.2002
 			</releaseDate>
 		</position>
-		
+
 		<position>
 			<number>
 				10
@@ -224,8 +224,8 @@
 			<name>
 				The Walking Dead: A Telltale Games Series - Season One
 			</name>
-			<genreName genre_id="przygodowe" color="green">
-				Przygodowe
+			<genreName genre_id="adventure" color="green">
+				Adventure
 			</genreName>
 			<rating>
 				9.4
@@ -238,5 +238,5 @@
 			</releaseDate>
 		</position>
 	</positions>
-	
+
 </ranking>
