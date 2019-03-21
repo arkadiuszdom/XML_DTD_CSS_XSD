@@ -66,12 +66,12 @@ position > age::before{
 	content: "PEGI: ";
 }
 
-position > genreName::before{
-	content: "genre: ";
+position > genreName::after{
+	content: " game";
 }
 
 position > rating::before{
-	content: "rating on gry-online.pl: ";
+	content: "rating: ";
 }
 
 position > releaseDate::before{
@@ -80,66 +80,70 @@ position > releaseDate::before{
 
 
 position > releaseDate::before{
-	content: "release date: "
+	content: "released: "
 }
 
-poster[poster_id="witcher3blood"]::before{	
- 	content: url("https://cdn.gracza.pl/galeria/gry13/grupy/176136921.jpg");
+position > predecessor::before{
+	content: "Predecessor: ";
 }
-poster[poster_id="Grand"]::before{	
- 	content: url("https://cdn.gracza.pl/galeria/gry13/grupy/176136921.jpg");
+
+poster[poster_id="witcher3blood"]::before{
+ 	content: url("https://cdn.gracza.pl/galeria/gry13/grupy/16814.jpg");
 }
-poster[poster_id="Stories"]::before{	
- 	content: url("https://cdn.gracza.pl/galeria/gry13/grupy/176136921.jpg");
+poster[poster_id="Grand"]::before{
+ 	content: url("https://cdn.gracza.pl/galeria/gry13/grupy/11862.jpg");
 }
-poster[poster_id="hearts"]::before{	
- 	content: url("https://cdn.gracza.pl/galeria/gry13/grupy/176136921.jpg");
+poster[poster_id="Stories"]::before{
+ 	content: url("https://cdn.gracza.pl/galeria/gry13/431482369.jpg");
 }
-poster[poster_id="hunt"]::before{	
+poster[poster_id="hearts"]::before{
+ 	content: url("https://cdn.gracza.pl/galeria/gry13/grupy/16811.jpg");
+}
+poster[poster_id="hunt"]::before{
  	content: url("https://cdn.gracza.pl/galeria/gry13/grupy/13689.jpg");
 }
-poster[poster_id="Skyrim"]::before{	
+poster[poster_id="Skyrim"]::before{
+ 	content: url("https://cdn.gracza.pl/galeria/gry13/grupy/573.jpg");
+}
+poster[poster_id="Redemtion"]::before{
  	content: url("https://cdn.gracza.pl/galeria/gry13/grupy/176136921.jpg");
 }
-poster[poster_id="Redemtion"]::before{	
- 	content: url("https://cdn.gracza.pl/galeria/gry13/grupy/176136921.jpg");
+poster[poster_id="Forza"]::before{
+ 	content: url("https://cdn.gracza.pl/galeria/gry13/grupy/18469.jpg");
 }
-poster[poster_id="Forza"]::before{	
- 	content: url("https://cdn.gracza.pl/galeria/gry13/grupy/176136921.jpg");
+poster[poster_id="Mafia"]::before{
+ 	content: url("https://cdn.gracza.pl/galeria/gry13/grupy/727.jpg");
 }
-poster[poster_id="Mafia"]::before{	
- 	content: url("https://cdn.gracza.pl/galeria/gry13/grupy/176136921.jpg");
+poster[poster_id="Walking"]::before{
+ 	content: url("https://cdn.gracza.pl/galeria/gry13/grupy/899.jpg");
 }
-poster[poster_id="Walking"]::before{	
- 	content: url("https://cdn.gracza.pl/galeria/gry13/grupy/176136921.jpg");
+poster[poster_id="Final"]::before{
+ 	content: url("https://cdn.gracza.pl/galeria/gry13/grupy/7470.jpg");
 }
-poster[poster_id="Final"]::before{	
- 	content: url("https://cdn.gracza.pl/galeria/gry13/grupy/176136921.jpg");
+poster[poster_id="Divinity"]::before{
+ 	content: url("https://cdn.gracza.pl/galeria/gry13/grupy/81957828.jpg");
 }
-poster[poster_id="Divinity"]::before{	
- 	content: url("https://cdn.gracza.pl/galeria/gry13/grupy/176136921.jpg");
-}
-poster[poster_id="RimWorld"]::before{	
+poster[poster_id="RimWorld"]::before{
  	content: url("https://cdn.gracza.pl/galeria/gry13/605123728.jpg");
 }
-poster[poster_id="Space"]::before{	
+poster[poster_id="Space"]::before{
  	content: url("https://cdn.gracza.pl/galeria/gry13/grupy/594221484.jpg");
 }
-poster[poster_id="Dead"]::before{	
+poster[poster_id="Dead"]::before{
  	content: url("https://cdn.gracza.pl/galeria/gry13/grupy/19234.jpg");
 }
-poster[poster_id="Legend"]::before{	
- 	content: url("https://cdn.gracza.pl/galeria/gry13/grupy/176136921.jpg");
+poster[poster_id="Legend"]::before{
+ 	content: url("https://cdn.gracza.pl/galeria/gry13/grupy/15745.jpg");
 }
-poster[poster_id="Hollow"]::before{	
- 	content: url("https://cdn.gracza.pl/galeria/gry13/grupy/176136921.jpg");
+poster[poster_id="Hollow"]::before{
+ 	content: url("https://cdn.gracza.pl/galeria/gry13/grupy/19325.jpg");
 }
-poster[poster_id="Forza4"]::before{	
+poster[poster_id="Forza4"]::before{
  	content: url("https://cdn.gracza.pl/galeria/gry13/grupy/602845078.jpg");
 }
-poster[poster_id="Portal"]::before{	
- 	content: url("https://cdn.gracza.pl/galeria/gry13/grupy/176136921.jpg");
+poster[poster_id="Portal"]::before{
+ 	content: url("https://cdn.gracza.pl/galeria/gry13/grupy/1584.jpg");
 }
-poster[poster_id="Sunset"]::before{	
+poster[poster_id="Sunset"]::before{
  	content: url("https://cdn.gracza.pl/galeria/gry13/grupy/607318328.jpg");
 }
