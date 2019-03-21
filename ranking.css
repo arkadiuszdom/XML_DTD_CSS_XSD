@@ -8,16 +8,17 @@ ranking{
 
 header{
 	font-size: 40px;
+	text-shadow: 1px 1px 2px black;
 	display: block;
 	text-align: center;
 	margin: auto;
 }
 
 header > author{
-	margin-top: 10px;
+	margin-top: 20px;
 	display: block;
 	text-align: center;
-	font-size: 20px;
+	font-size: 30px;
 	color: #F11111;
 }
 
@@ -35,14 +36,18 @@ positions{
 	margin-right: 10%;
 }
 
+
 positions > position, name {
 	display: block;
-	font-size: 20px;
+}
+
+position > name{
+	font-size: 30px;
+	font-weight: bold;
 }
 
 positions > position:hover{
 	background-color: #F11111;
-	cursor: pointer;
 }
 
 position > releaseDate{
@@ -53,6 +58,7 @@ position > releaseDate{
 position > number{
 	text-align: left;
 	display: list-item;
+	font-size: 30px;
 	list-style: none;
 	padding-left: 70px;
 	background-color: #a10000;
@@ -67,7 +73,7 @@ position > age::before{
 }
 
 position > genreName::after{
-	content: " game";
+	content: " game,";
 }
 
 position > rating::before{
@@ -77,7 +83,6 @@ position > rating::before{
 position > releaseDate::before{
 	content: "release date: "
 }
-
 
 position > releaseDate::before{
 	content: "released: "
