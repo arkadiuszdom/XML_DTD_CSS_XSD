@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+ranking{
+	margin: auto;
+}
+
+header{
+	font-size: 40px;
+	font-family: monospace;
+	display: block;
+	text-align: center;
+	margin: auto;
+}
+
+header > author{
+	margin-top: 10px;
+	display: block;
+	text-align: center;
+	font-size: 20px;
+}
+
+genres{
+	display: none;
+}
+
+position{
+	display: block;
+	font-family: monospace;
+	font-size: 20px;
+}

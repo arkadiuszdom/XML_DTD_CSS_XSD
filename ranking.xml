@@ -1,6 +1,6 @@
 <?xml version="1.0" standalone="no" ?>
-<!DOCTYPE ranking SYSTEM "ranking.dtd">
 <?xml-stylesheet type="text/css" href="ranking.css" ?>
+<!DOCTYPE ranking SYSTEM "ranking.dtd">
 <ranking>
 	<header>
 		<task_name>Top 30 games of all time on gry-online.pl</task_name>
