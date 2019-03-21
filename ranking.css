@@ -3,6 +3,7 @@
 ranking{
 	margin: auto;
 	font-family: sans-serif;
+ 	background-image: url("background.jpg");
 }
 
 header{
@@ -73,4 +74,13 @@ position > rating::before{
 
 position > releaseDate::before{
 	content: "release date: "
+}
+
+
+position > releaseDate::before{
+	content: "release date: "
+}
+
+poster[poster_id="witcher3blood"]::before{	
+ 	content: url("https://cdn.gracza.pl/galeria/gry13/grupy/176136921.jpg");
 }
