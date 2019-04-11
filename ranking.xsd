@@ -1,34 +1,148 @@
-<?xml version="1.0" ?>
-<schema xmlns="http://www.w3.org/2001/XMLSchema">
+<?xml version="1.0" encoding="UTF-8" ?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+        xmlns:ranking="ranking"
+        targetNamespace="ranking"
+        elementFormDefault="qualified">
 
-  	<simpleType name="type_task_name">
-   		<restriction base="string">
-      		<maxLength value="100"/>
-    	</restriction>
-  	</simpleType>
+  	<xsd:simpleType name="type_task_name">
+   		<xsd:restriction base="xsd:string">
+      		<xsd:maxLength value="100"/>
+    	</xsd:restriction>
+  	</xsd:simpleType>
 
-  	<simpleType name="type_author">
-   		<restriction base="string">
-      		<maxLength value="100"/>
-    	</restriction>
-  	</simpleType>
+  	<xsd:simpleType name="type_author">
+   		<xsd:restriction base="xsd:string">
+      		<xsd:maxLength value="100"/>
+    	</xsd:restriction>
+  	</xsd:simpleType>
 
-  	<complexType name="type_header">
-      	<sequence>
-        	<element name="task_name" type="type_task_name"/>
-        	<element name="author" type="type_author" minOccurs="1"/>
-     	 </sequence>
-  	</complexType>
+  	<xsd:complexType name="type_header">
+      	<xsd:sequence>
+        	<xsd:element name="task_name" type="ranking:type_task_name"/>
+        	<xsd:element name="author" type="ranking:type_author" minOccurs="1" maxOccurs="2"/>
+     	 </xsd:sequence>
+  	</xsd:complexType>
+
+    <xsd:complexType name="type_genre_color">
+        <xsd:simpleContent>
+            <xsd:extension base="ranking:type_genre">
+                <xsd:attribute type="xsd:string" name="color" use="optional"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+
+    <xsd:complexType name="type_genre">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute type="xsd:string" name="genre_id" use="required"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+
+  	<xsd:complexType name="type_genres">
+      	<xsd:sequence>
+        	<xsd:element name="genre" type="ranking:type_genre" minOccurs="1" maxOccurs="unbounded"/>
+     	 </xsd:sequence>
+  	</xsd:complexType>
+
+    <xsd:complexType name="type_number">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:int">
+                <xsd:attribute type="xsd:string" name="top_three" use="optional"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+
+    <xsd:complexType name="type_poster">
+        <xsd:attribute type="xsd:string" name="poster_id" use="required"/>
+    </xsd:complexType>
+
+  	<xsd:simpleType name="type_rating">
+   		<xsd:restriction base="xsd:float">
+    	</xsd:restriction>
+  	</xsd:simpleType>
+
+  	<xsd:simpleType name="type_name">
+   		<xsd:restriction base="xsd:string">
+      		<xsd:maxLength value="80"/>
+    	</xsd:restriction>
+  	</xsd:simpleType>
+
+	<xsd:simpleType name="type_age_enum" final="restriction" >
+	    <xsd:restriction base="xsd:string">
+	        <xsd:enumeration value="18+" />
+	        <xsd:enumeration value="16+" />
+	        <xsd:enumeration value="12+" />
+	        <xsd:enumeration value="7+" />
+	        <xsd:enumeration value="3+" />
+	        <xsd:enumeration value="not classified" />
+	    </xsd:restriction>
+	</xsd:simpleType>
+
+    <xsd:complexType name="type_age">
+        <xsd:simpleContent>
+            <xsd:extension base="ranking:type_age_enum">
+                <xsd:attribute type="xsd:string" name="minimum"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+
+	<xsd:simpleType name="type_releaseDate">
+	    <xsd:restriction base="xsd:string">
+    		<xsd:pattern value="[0-9][0-9][.][0-9][0-9][.][0-9][0-9][0-9][0-9]" />
+  		</xsd:restriction>
+	</xsd:simpleType>
+
+	<xsd:complexType name="type_predecessor">	
+      	<xsd:sequence>
+        	<xsd:element name="name" type="ranking:type_name" minOccurs="1" maxOccurs="1"/>
+     	 </xsd:sequence>
+	</xsd:complexType>
 
 
-  	<element name="ranking">
-  		<complexType>
-      		<sequence>
-        		<element name="header" type="type_header"/>
-        		<element name="genres" type="type_genres"/>
-        		<element name="positions" type="type_positions"/>
-     	 	</sequence>
-  		</complexType>
-  	</element>             <!-- ranking -->
+  	<xsd:complexType name="type_position">
+      	<xsd:sequence>
+        	<xsd:element name="number" type="ranking:type_number"/>
+        	<xsd:element name="poster" type="ranking:type_poster"/>
+        	<xsd:element name="name" type="ranking:type_name"/>
+        	<xsd:element name="genreName" type="ranking:type_genre_color"/>  
+        	<xsd:element name="rating" type="ranking:type_rating"/>
+        	<xsd:element name="age" type="ranking:type_age"/>
+        	<xsd:element name="releaseDate" type="ranking:type_releaseDate"/>
+        	<xsd:element name="predecessor" type="ranking:type_predecessor" minOccurs="0" maxOccurs="1"/>
+     	</xsd:sequence>
+  	</xsd:complexType>
 
-</schema>
+
+  	<xsd:complexType name="type_positions">
+      	<xsd:sequence>
+        	<xsd:element name="position" type="ranking:type_position" minOccurs="3" maxOccurs="unbounded"/>
+     	 </xsd:sequence>
+  	</xsd:complexType>
+
+	
+	<xsd:group name="group_ranking_sections">
+	    <xsd:sequence>	
+	    	<xsd:element name="header" type="ranking:type_header"/>
+	    	<xsd:element name="genres" type="ranking:type_genres"/>
+	    	<xsd:element name="positions" type="ranking:type_positions"/>
+	    </xsd:sequence>
+	</xsd:group>
+
+  	<xsd:element name="ranking">
+  		<xsd:complexType>
+  			<xsd:group ref="ranking:group_ranking_sections"/>
+  		</xsd:complexType>
+
+	<xsd:key name="key_genre_id">
+        <xsd:selector xpath="./ranking:genres/ranking:genre"/>
+        <xsd:field xpath="@genre_id"/>
+    </xsd:key>
+    <xsd:keyref name="keyref_genre_id" refer="ranking:key_genre_id">
+        <xsd:selector xpath="./ranking:positions/ranking:genreName"/>
+        <xsd:field xpath="@genre_id"/>
+    </xsd:keyref>
+
+  	</xsd:element>             <!-- ranking -->
+
+</xsd:schema>

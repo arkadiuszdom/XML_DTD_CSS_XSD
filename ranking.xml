@@ -1,7 +1,10 @@
 <?xml version="1.0" standalone="no" ?>
-<?xml-stylesheet type="text/css" href="ranking.css" ?>
-<!DOCTYPE ranking SYSTEM "ranking.dtd">
-<ranking>
+<!--<?xml-stylesheet type="text/css" href="ranking.css" ?>-->
+<!--<!DOCTYPE ranking SYSTEM "ranking.dtd">-->
+<ranking
+        xmlns="ranking"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="ranking ranking.xsd">
 	<header>
 		<task_name>Top 30 games of all time on gry-online.pl</task_name>
 		<author>Arkadiusz Domrat 210166</author>
@@ -19,454 +22,206 @@
 
 	<positions>
 		<position>
-			<number top_three="no1">
-				1
-			</number>
+			<number top_three="no1">1</number>
 			<poster poster_id="witcher3blood"/>
-			<name>
-				Witcher 3: blood and wine
-			</name>
-			<genreName genre_id="rpg">
-				RPG
-			</genreName>
-			<rating>
-				9.8
-			</rating>
-			<age minimum="18">
-				18+
-			</age>
-			<releaseDate>
-				31.05.2016
-			</releaseDate>
+			<name>Witcher 3: blood and wine</name>
+			<genreName genre_id="rpg">RPG</genreName>
+			<rating>9.8</rating>
+			<age minimum="18">18+</age>
+			<releaseDate>31.05.2016</releaseDate>
 		</position>
 
 		<position>
-			<number top_three="no2">
-				2
-			</number>
+			<number top_three="no2">2</number>
 			<poster poster_id="Grand"/>
-			<name>
-				Grand Theft Auto V
-			</name>
-			<genreName genre_id="action" color="blue">
-				Action
-			</genreName>
-			<rating>
-				9.6
-			</rating>
-			<age minimum="18">
-				18+
-			</age>
-			<releaseDate>
-				17.09.2013
-			</releaseDate>
+			<name>Grand Theft Auto V</name>
+			<genreName genre_id="action" color="blue">Action</genreName>
+			<rating>9.6</rating>
+			<age minimum="18">18+</age>
+			<releaseDate>17.09.2013</releaseDate>
 		</position>
 
 		<position>
-			<number top_three="no3">
-				3
-			</number>
+			<number top_three="no3">3</number>
 			<poster poster_id="Stories"/>
-			<name>
-				Stories Untold
-			</name>
-			<genreName genre_id="adventure" color="blue">
-				Adventure
-			</genreName>
-			<rating>
-				9.6
-			</rating>
-			<age minimum="not_classified">
-				not classified
-			</age>
-			<releaseDate>
-				27.02.2017
-			</releaseDate>
+			<name>Stories Untold</name>
+			<genreName genre_id="adventure" color="blue">Adventure</genreName>
+			<rating>9.6</rating>
+			<age minimum="not_classified">not classified</age>
+			<releaseDate>27.02.2017</releaseDate>
 		</position>
 
 				<position>
-			<number>
-				4
-			</number>
+			<number>4</number>
 			<poster poster_id="hearts"/>
-			<name>
-				Witcher 3: hearts of stone
-			</name>
-			<genreName genre_id="rpg">
-				RPG
-			</genreName>
-			<rating>
-				9.5
-			</rating>
-			<age minimum="18">
-				18+
-			</age>
-			<releaseDate>
-				13.10.2015
-			</releaseDate>
+			<name>Witcher 3: hearts of stone</name>
+			<genreName genre_id="rpg">RPG</genreName>
+			<rating>9.5</rating>
+			<age minimum="18">18+</age>
+			<releaseDate>13.10.2015</releaseDate>
 		</position>
 
 		<position>
-			<number>
-				5
-			</number>
+			<number>5</number>
 			<poster poster_id="hunt"/>
-			<name>
-				Witcher 3: wild hunt
-			</name>
-			<genreName genre_id="rpg">
-				RPG
-			</genreName>
-			<rating>
-				9.4
-			</rating>
-			<age minimum="18">
-				18+
-			</age>
-			<releaseDate>
-				19.05.2015
-			</releaseDate>
-			<predecessor>
-				<name>
-					Witcher 2: Assasins of Kings
-				</name>
-			</predecessor>
+			<name>Witcher 3: wild hunt</name>
+			<genreName genre_id="rpg">RPG</genreName>
+			<rating>9.4</rating>
+			<age minimum="18">18+</age>
+			<releaseDate>19.05.2015</releaseDate>
+			<predecessor><name>	Witcher 2: Assasins of Kings</name></predecessor>
 		</position>
 
 		<position>
-			<number>
-				6
-			</number>
+			<number>6</number>
 			<poster poster_id="Skyrim"/>
-			<name>
-				The Elder Scrolls V: Skyrim
-			</name>
-			<genreName genre_id="rpg">
-				RPG
-			</genreName>
-			<rating>
-				9.4
-			</rating>
-			<age minimum="18">
-				18+
-			</age>
-			<releaseDate>
-				11.11.2011
-			</releaseDate>
-			<predecessor>
-				<name>
-					The Elder Scrolls IV: Oblivion
-				</name>
-			</predecessor>
+			<name>The Elder Scrolls V: Skyrim</name>
+			<genreName genre_id="rpg">RPG</genreName>
+			<rating>9.4</rating>
+			<age minimum="18">18+</age>
+			<releaseDate>11.11.2011</releaseDate>
+			<predecessor><name>	The Elder Scrolls IV: Oblivion</name></predecessor>
 		</position>
 
 		<position>
-			<number>
-				7
-			</number>
+			<number>7</number>
 			<poster poster_id="Redemtion"/>
-			<name>
-				Red Dead Redemtion 2
-			</name>
-			<genreName genre_id="action" color="orange">
-				Action
-			</genreName>
-			<rating>
-				9.4
-			</rating>
-			<age minimum="18">
-				18+
-			</age>
-			<releaseDate>
-				26.10.2018
-			</releaseDate>
+			<name>Red Dead Redemtion 2</name>
+			<genreName genre_id="action" color="orange">Action</genreName>
+			<rating>9.4</rating>
+			<age minimum="18">18+</age>
+			<releaseDate>26.10.2018</releaseDate>
 		</position>
 
 		<position>
-			<number>
-				8
-			</number>
+			<number>8</number>
 			<poster poster_id="Forza"/>
-			<name>
-				Forza Horizon
-			</name>
-			<genreName genre_id="race" color="blue">
-				Race
-			</genreName>
-			<rating>
-				9.4
-			</rating>
-			<age minimum="3">
-				3+
-			</age>
-			<releaseDate>
-				27.09.2016
-			</releaseDate>
+			<name>Forza Horizon</name>
+			<genreName genre_id="race" color="blue">Race</genreName>
+			<rating>9.4</rating>
+			<age minimum="3">3+</age>
+			<releaseDate>27.09.2016</releaseDate>
 		</position>
 
 		<position>
-			<number>
-				9
-			</number>
+			<number>9</number>
 			<poster poster_id="Mafia"/>
-			<name>
-				Mafia: The City of Lost Heaven
-			</name>
-			<genreName genre_id="action" color="red">
-				Action
-			</genreName>
-			<rating>
-				9.4
-			</rating>
-			<age minimum="18">
-				18+
-			</age>
-			<releaseDate>
-				29.08.2002
-			</releaseDate>
+			<name>Mafia: The City of Lost Heaven</name>
+			<genreName genre_id="action" color="red">Action</genreName>
+			<rating>9.4</rating>
+			<age minimum="18">18+</age>
+			<releaseDate>29.08.2002</releaseDate>
 		</position>
 
 		<position>
-			<number>
-				10
-			</number>
+			<number>10</number>
 			<poster poster_id="Walking"/>
-			<name>
-				The Walking Dead: A Telltale Games Series - Season One
-			</name>
-			<genreName genre_id="adventure" color="green">
-				Adventure
-			</genreName>
-			<rating>
-				9.4
-			</rating>
-			<age minimum="18">
-				18+
-			</age>
-			<releaseDate>
-				24.04.2012
-			</releaseDate>
+			<name>The Walking Dead: A Telltale Games Series - Season One</name>
+			<genreName genre_id="adventure" color="green">Adventure</genreName>
+			<rating>9.4</rating>
+			<age minimum="18">18+</age>
+			<releaseDate>24.04.2012</releaseDate>
 		</position>
 
 		<position>
-			<number>
-				11
-			</number>
+			<number>11</number>
 			<poster poster_id="Final"/>
-			<name>
-				Final Fantasy VII
-			</name>
-			<genreName genre_id="rpg" color="green">
-				RPG
-			</genreName>
-			<rating>
-				9.4
-			</rating>
-			<age minimum="12">
-				12+
-			</age>
-			<releaseDate>
-				31.01.1997
-			</releaseDate>
+			<name>Final Fantasy VII</name>
+			<genreName genre_id="rpg" color="green">RPG</genreName>
+			<rating>9.4</rating>
+			<age minimum="12">12+</age>
+			<releaseDate>31.01.1997</releaseDate>
 		</position>
 
 		<position>
-			<number>
-				12
-			</number>
+			<number>12</number>
 			<poster poster_id="Divinity"/>
-			<name>
-				Divinity: Original Sin II
-			</name>
-			<genreName genre_id="rpg" color="green">
-				RPG
-			</genreName>
-			<rating>
-				9.3
-			</rating>
-			<age minimum="18">
-				18+
-			</age>
-			<releaseDate>
-				14.09.2017
-			</releaseDate>
+			<name>Divinity: Original Sin II</name>
+			<genreName genre_id="rpg" color="green">RPG</genreName>
+			<rating>9.3</rating>
+			<age minimum="18">18+</age>
+			<releaseDate>14.09.2017</releaseDate>
 		</position>
 
 		<position>
-			<number>
-				13
-			</number>
+			<number>13</number>
 			<poster poster_id="RimWorld"/>
-			<name>
-				RimWorld
-			</name>
-			<genreName genre_id="strategic" color="green">
-				Strategic
-			</genreName>
-			<rating>
-				9.3
-			</rating>
-			<age minimum="not_classified">
-				not classified
-			</age>
-			<releaseDate>
-				17.10.2018
-			</releaseDate>
+			<name>RimWorld</name>
+			<genreName genre_id="strategic" color="green">Strategic</genreName>
+			<rating>9.3</rating>
+			<age minimum="not_classified">not classified</age>
+			<releaseDate>17.10.2018</releaseDate>
 		</position>
 
 
 		<position>
-			<number>
-				14
-			</number>
+			<number>14</number>
 			<poster poster_id="Space"/>
-			<name>
-				Space Engineers
-			</name>
-			<genreName genre_id="simulation" color="green">
-				Simulation
-			</genreName>
-			<rating>
-				9.3
-			</rating>
-			<age minimum="12">
-				12+
-			</age>
-			<releaseDate>
-				28.02.2019
-			</releaseDate>
+			<name>Space Engineers</name>
+			<genreName genre_id="simulation" color="green">Simulation</genreName>
+			<rating>9.3</rating>
+			<age minimum="12">12+</age>
+			<releaseDate>28.02.2019</releaseDate>
 		</position>
 
 		<position>
-			<number>
-				15
-			</number>
+			<number>15</number>
 			<poster poster_id="Dead"/>
-			<name>
-				Dead Cells
-			</name>
-			<genreName genre_id="action" color="green">
-				Action
-			</genreName>
-			<rating>
-				9.3
-			</rating>
-			<age minimum="16">
-				16+
-			</age>
-			<releaseDate>
-				07.08.2018
-			</releaseDate>
+			<name>Dead Cells</name>
+			<genreName genre_id="action" color="green">Action</genreName>
+			<rating>9.3</rating>
+			<age minimum="16">16+</age>
+			<releaseDate>07.08.2018</releaseDate>
 		</position>
 
 		<position>
-			<number>
-				16
-			</number>
+			<number>16</number>
 			<poster poster_id="Legend"/>
-			<name>
-				The Legend of Zelda: Breath of the Wild
-			</name>
-			<genreName genre_id="action" color="green">
-				Action
-			</genreName>
-			<rating>
-				9.3
-			</rating>
-			<age minimum="12">
-				12+
-			</age>
-			<releaseDate>
-				03.03.2017
-			</releaseDate>
+			<name>The Legend of Zelda: Breath of the Wild</name>
+			<genreName genre_id="action" color="green">Action</genreName>
+			<rating>9.3</rating>
+			<age minimum="12">12+</age>
+			<releaseDate>03.03.2017</releaseDate>
 		</position>
 
 		<position>
-			<number>
-				17
-			</number>
+			<number>17</number>
 			<poster poster_id="Hollow"/>
-			<name>
-				Hollow Knight
-			</name>
-			<genreName genre_id="action" color="green">
-				Action
-			</genreName>
-			<rating>
-				9.3
-			</rating>
-			<age minimum="7">
-				7+
-			</age>
-			<releaseDate>
-				24.02.2017
-			</releaseDate>
+			<name>Hollow Knight</name>
+			<genreName genre_id="action" color="green">Action</genreName>
+			<rating>9.3</rating>
+			<age minimum="7">7+</age>
+			<releaseDate>24.02.2017</releaseDate>
 		</position>
 
 		<position>
-			<number>
-				18
-			</number>
+			<number>18</number>
 			<poster poster_id="Forza4"/>
-			<name>
-				Forza Horizon 4: Fortune Island
-			</name>
-			<genreName genre_id="race" color="green">
-				race
-			</genreName>
-			<rating>
-				9.3
-			</rating>
-			<age minimum="3">
-				3+
-			</age>
-			<releaseDate>
-				13.12.2018
-			</releaseDate>
+			<name>Forza Horizon 4: Fortune Island</name>
+			<genreName genre_id="race" color="green">race</genreName>
+			<rating>9.3</rating>
+			<age minimum="3">3+</age>
+			<releaseDate>13.12.2018</releaseDate>
 		</position>
 
 		<position>
-			<number>
-				19
-			</number>
+			<number>19</number>
 			<poster poster_id="Portal"/>
-			<name>
-				Portal 2
-			</name>
-			<genreName genre_id="action" color="green">
-				Action
-			</genreName>
-			<rating>
-				9.3
-			</rating>
-			<age minimum="12">
-				12+
-			</age>
-			<releaseDate>
-				19.04.2011
-			</releaseDate>
+			<name>Portal 2</name>
+			<genreName genre_id="action" color="green">Action</genreName>
+			<rating>9.3</rating>
+			<age minimum="12">12+</age>
+			<releaseDate>19.04.2011</releaseDate>
 		</position>
 
 		<position>
-			<number>
-				20
-			</number>
+			<number>20</number>
 			<poster poster_id="Sunset"/>
-			<name>
-				Sunset Overdrive
-			</name>
-			<genreName genre_id="action" color="green">
-				action
-			</genreName>
-			<rating>
-				9.3
-			</rating>
-			<age minimum="3">
-				3+
-			</age>
-			<releaseDate>
-				28.10.2014
-			</releaseDate>
+			<name>Sunset Overdrive</name>
+			<genreName genre_id="action" color="green">action</genreName>
+			<rating>9.3</rating>
+			<age minimum="3">3+</age>
+			<releaseDate>28.10.2014</releaseDate>
 		</position>
 	</positions>
 </ranking>
