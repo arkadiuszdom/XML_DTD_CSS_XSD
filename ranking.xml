@@ -1,8 +1,13 @@
 <?xml version="1.0" standalone="no" ?>
 <!--<?xml-stylesheet type="text/css" href="ranking.css" ?>-->
 <!--<!DOCTYPE ranking SYSTEM "ranking.dtd">-->
+<?xml-stylesheet type="text/xsl" href="xml2xml.xsl"?>
+<!-- 
 <ranking
         xmlns="ranking"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="ranking ranking.xsd"> -->
+<ranking
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:schemaLocation="ranking ranking.xsd">
 	<header>
@@ -51,7 +56,7 @@
 			<releaseDate>27.02.2017</releaseDate>
 		</position>
 
-				<position>
+		<position>
 			<number>4</number>
 			<poster poster_id="hearts"/>
 			<name>Witcher 3: hearts of stone</name>
