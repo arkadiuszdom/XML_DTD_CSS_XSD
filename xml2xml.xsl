@@ -4,11 +4,11 @@
 	<xsl:template match="/">
 		<rankingGenreSummary>
 			<positionsTable>
-				<positionsTableRow>
-					<positionsTableHead>Genre</positionsTableHead>
-					<positionsTableHead>Titles</positionsTableHead>
-					<positionsTableHead>Summed rating</positionsTableHead>
-				</positionsTableRow>
+				<positionsTableHeadRow>
+					<positionsTableHeadGenre>Genre</positionsTableHeadGenre>
+					<positionsTableHeadTitles>Titles</positionsTableHeadTitles>
+					<positionsTableHeadSummedRating>Summed rating</positionsTableHeadSummedRating>
+				</positionsTableHeadRow>
 
 
 	    		<xsl:for-each select="ranking/genres/genre">
@@ -16,42 +16,41 @@
    				<xsl:variable name="currentGenreId" select="@genre_id"/>
 
 
-				<positionsTableRow>
-					<positionsTableData><xsl:value-of select="current()"/></positionsTableData>
-					<positionsTableData>
+				<positionsTableDataRow>
+					<positionsTableDataGenre><xsl:value-of select="current()"/></positionsTableDataGenre>
+					<positionsTableDataTitles>
 
 
       				<xsl:for-each select="/ranking/positions/position[genreName/@genre_id=$currentGenreId]">
       				<xsl:sort select="name"/>
       				
 
-					<positionsTableData><xsl:value-of select="name"/></positionsTableData>
+					<positionsTableDataTitle><xsl:value-of select="name"/></positionsTableDataTitle>
 
       				</xsl:for-each>
 
 
-					</positionsTableData>
-					<positionsTableData><xsl:value-of select="sum(/ranking/positions/position[genreName/@genre_id=$currentGenreId]/rating)"/></positionsTableData>
-				</positionsTableRow>
+					</positionsTableDataTitles>
+					<positionsTableDataSummedRating><xsl:value-of select="sum(/ranking/positions/position[genreName/@genre_id=$currentGenreId]/rating)"/></positionsTableDataSummedRating>
+				</positionsTableDataRow>
 
 	    		</xsl:for-each>
 
 			</positionsTable>
-
+			<reportTable>
+				<reportTableHeadRow>
+					<reportTableHeadNGenres>Number of genres</reportTableHeadNGenres>
+					<reportTableHeadNPositions>Number of positions</reportTableHeadNPositions>
+					<reportTableHeadTotal>Summed ratings total</reportTableHeadTotal>
+					<reportTableHeadDate>Date</reportTableHeadDate>
+				</reportTableHeadRow>
+				<reportTableDataRow>
+					<reportTableDataNGeneres><xsl:value-of select="count(ranking/genres/genre)"/></reportTableDataNGeneres>
+					<reportTableDataNPositions><xsl:value-of select="count(ranking/positions/position)"/></reportTableDataNPositions>
+					<reportTableDataTotal><xsl:value-of select="sum(ranking/positions/position/rating)"/></reportTableDataTotal>
+					<reportTableDataDate><xsl:value-of select="current-dateTime()"/></reportTableDataDate>
+				</reportTableDataRow>
+			</reportTable>
 		</rankingGenreSummary>
-		<reportTable>
-			<reportTableRow>
-				<reportTableHead>Number of genres</reportTableHead>
-				<reportTableHead>Number of positions</reportTableHead>
-				<reportTableHead>Summed ratings total</reportTableHead>
-				<reportTableHead>Date</reportTableHead>
-			</reportTableRow>
-			<reportTableRow>
-				<reportTableData><xsl:value-of select="count(ranking/genres/genre)"/></reportTableData>
-				<reportTableData><xsl:value-of select="count(ranking/positions/position)"/></reportTableData>
-				<reportTableData><xsl:value-of select="sum(ranking/positions/position/rating)"/></reportTableData>
-				<reportTableData><xsl:value-of select="current-dateTime()"/></reportTableData>
-			</reportTableRow>
-		</reportTable>
 	</xsl:template>
 </xsl:stylesheet>
