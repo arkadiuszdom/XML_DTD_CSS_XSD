@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Ranking>
+  <Gra Pozycja="1"
+    Nazwa="Witcher 3: blood and wine"
+    Gatunek="RPG"
+    Ocena="9.8"
+    Zalecany_wiek_minimalny="18+"
+    Data_premiery="31.05.2016"/>
+
+  <Gra Pozycja="2"
+    Nazwa="Grand Theft Auto V"
+    Gatunek="akcja"
+    Ocena="9.6"
+    Zalecany_wiek_minimalny="18+"
+    Data_premiery="17.09.2013"/>
+
+  <Gra Pozycja="3"
+    Nazwa="Stories untold"
+    Gatunek="przygodowka"
+    Ocena="9.6"
+    Zalecany_wiek_minimalny="18+"
+    Data_premiery="27.02.2017"/>
+
+  <Gra Pozycja="4"
+    Nazwa="Witcher 3: hearts of stone"
+    Gatunek="RPG"
+    Ocena="9.5"
+    Zalecany_wiek_minimalny="18+"
+    Data_premiery="13.10.2015"/>
+
+  <Gra Pozycja="5"
+    Nazwa="Witcher 3: wild hunt"
+    Gatunek="RPG"
+    Ocena="9.4"
+    Zalecany_wiek_minimalny="18+"
+    Data_premiery="19.05.2015"/>
+
+  <Gra Pozycja="6"
+    Nazwa="Skyrim"
+    Gatunek="RPG"
+    Ocena="9.4"
+    Zalecany_wiek_minimalny="18+"
+    Data_premiery="11.11.2011"/>
+
+  <Gra Pozycja="7"
+    Nazwa="Red Dead Redemtion 2"
+    Gatunek="akcja"
+    Ocena="9.4"
+    Zalecany_wiek_minimalny="18+"
+    Data_premiery="26.10.2018"/>
+
+  <Gra Pozycja="8"
+    Nazwa="Forza Horizon"
+    Gatunek="wyscigi"
+    Ocena="9.4"
+    Zalecany_wiek_minimalny="3+"
+    Data_premiery="27.09.2016"/>
+
+  <Gra Pozycja="9"
+    Nazwa="Mafia"
+    Gatunek="akcja"
+    Ocena="9.4"
+    Zalecany_wiek_minimalny="18+"
+    Data_premiery="29.08.2002"/>
+
+  <Gra Pozycja="10"
+    Nazwa="The Walking Dead Season One"
+    Gatunek="przygodowka"
+    Ocena="9.4"
+    Zalecany_wiek_minimalny="18+"
+    Data_premiery="24.04.2012"/>
+
+  <Gra Pozycja="11"
+    Nazwa="Final Fantasy VII"
+    Gatunek="RPG"
+    Ocena="9.4"
+    Zalecany_wiek_minimalny="18+"
+    Data_premiery="31.01.1997"/>
+
+  <Gra Pozycja="12"
+    Nazwa="Divinity: Original Sin II"
+    Gatunek="RPG"
+    Ocena="9.3"
+    Zalecany_wiek_minimalny="18+"
+    Data_premiery="14.09.2017"/>
+
+  <Gra Pozycja="13"
+    Nazwa="RimWorld"
+    Gatunek="strategia"
+    Ocena="9.3"
+    Zalecany_wiek_minimalny="3+"
+    Data_premiery="17.10.2018"/>
+
+  <Gra Pozycja="14"
+    Nazwa="Space Engineers"
+    Gatunek="symulacja"
+    Ocena="9.3"
+    Zalecany_wiek_minimalny="12+"
+    Data_premiery="28.02.2019"/>
+
+  <Gra Pozycja="15"
+    Nazwa="Dead Cells"
+    Gatunek="akcja"
+    Ocena="9.3"
+    Zalecany_wiek_minimalny="16+"
+    Data_premiery="07.08.2018"/>
+
+  <Gra Pozycja="15"
+    Nazwa="Dead Cells"
+    Gatunek="akcja"
+    Ocena="9.3"
+    Zalecany_wiek_minimalny="16+"
+    Data_premiery="07.08.2018"/>
+
+  <Gra Pozycja="16"
+    Nazwa="Zelda Breath of the Wild"
+    Gatunek="akcja"
+    Ocena="9.3"
+    Zalecany_wiek_minimalny="12+"
+    Data_premiery="03.03.2017"/>
+
+  <Gra Pozycja="17"
+    Nazwa="Hollow Knight"
+    Gatunek="akcja"
+    Ocena="9.3"
+    Zalecany_wiek_minimalny="7+"
+    Data_premiery="24.02.2017"/>
+
+  <Gra Pozycja="18"
+    Nazwa="Forza Horizon 4: Fortune Island"
+    Gatunek="wyscigi"
+    Ocena="9.3"
+    Zalecany_wiek_minimalny="3+"
+    Data_premiery="13.12.2018"/>
+
+  <Gra Pozycja="19"
+    Nazwa="Portal 2"
+    Gatunek="akcja"
+    Ocena="9.3"
+    Zalecany_wiek_minimalny="3+"
+    Data_premiery="19.04.2011"/>
+
+  <Gra Pozycja="20"
+    Nazwa="Sunset Overdrive"
+    Gatunek="akcja"
+    Ocena="9.3"
+    Zalecany_wiek_minimalny="3+"
+    Data_premiery="28.10.2014"/>
+
+    <Informacje>
+      <Liczba_gier>20</Liczba_gier>
+    </Informacje>
+</Ranking>
