@@ -12,7 +12,8 @@
 			<xsl:for-each select="rankingGenreSummary/positionsTable/positionsTableDataRow">
 
 				<xsl:variable name="games_number" select='count(positionsTableDataTitles/positionsTableDataTitle)' />
-				<xsl:variable name="y_position" select='position() * ($box_height + $interval_height)' />
+				<xsl:variable name="counter" select='position()' />				
+				<xsl:variable name="y_position" select='$counter * ($box_height + $interval_height)' />
 				<xsl:variable name="games_box_width" select='$games_number*$games_box_base_width' />
 				<xsl:variable name="rating" select='positionsTableDataSummedRating' />
 				<xsl:variable name="rating_box_width" select='$rating*$games_box_base_width' />
@@ -23,7 +24,15 @@
 						<xsl:value-of select="positionsTableDataGenre"/>:
 					</text>
 
-					<rect width="{$games_box_width}" height="{$box_height}" x="{$box_x_position}" y="{$y_position}"></rect>
+					<rect box_number="{$counter}" class="games_box" width="{$games_box_width}" height="{$box_height}" x="{$box_x_position}" y="{$y_position}">
+						<titles titles_number="{$counter}">
+							<xsl:for-each select="positionsTableDataTitles/positionsTableDataTitle">
+								<text>
+									<xsl:value-of select="current()"/>
+								</text>
+							</xsl:for-each>
+						</titles>
+					</rect>
 					<text y="{$y_position + $text_y_position_offset}" x="{$box_x_position + $games_box_width + $interval_x_position}">
 						<xsl:value-of select="$games_number"/> gier 
 					</text>
@@ -36,33 +45,36 @@
 
 			</xsl:for-each>
 		
+			<g cx="50" cy="250" fill="blue">
+			  	<text>
+			  		Arkadiusz Domrat i Krzysztof Gonicki
+			  	</text>
+			   	<animate 
+				    attributeName="cx"
+				    from="50"
+				    to="550" 
+				    dur="10s"
+				    begin="click"
+				    fill="freeze" 
+			   	/>
+		   	</g>
 
-		  <circle cx="250" cy="250" r="50" fill="red" />
-		  <script type="text/javascript"><![CDATA[
-		    var KEY = { w:87, a:65, s:83, d:68 };
-		    var moveSpeed = 5;
-		    var circle = document.getElementsByTagName("circle")[0];
-		    var x = circle.getAttribute('cx')*1,
-		        y = circle.getAttribute('cy')*1;
-		    document.documentElement.addEventListener('keydown',function(evt){
-		      switch (evt.keyCode){
-		        case KEY.w:
-		          circle.setAttribute('cy',y-=moveSpeed);
-		          // Alternatively:
-		          // circle.cy.baseVal.value = (y-=moveSpeed);
-		        break;
-		        case KEY.s:
-		          circle.setAttribute('cy',y+=moveSpeed);
-		        break;
-		        case KEY.a:
-		          circle.setAttribute('cx',x-=moveSpeed);
-		        break;
-		        case KEY.d:
-		          circle.setAttribute('cx',x+=moveSpeed);
-		        break;
-		      }
-		    },false);
-		  ]]></script>
+		  	<script type="text/javascript">
+		  	<![CDATA[
+		  		let game_boxes = document.querySelectorAll(".games_box");
+				for(let game_box of game_boxes) {
+					game_box.addEventListener("click", function(){
+				        let titles=game_box.children[0].children;
+						let titles_string="";
+				        for(let title of titles) {
+				            titles_string+=title.textContent+"\n";
+					    }
+						alert(titles_string);
+				    });
+				}
+		  	]]>		  	
+		  	</script>
+
 		</svg>
 	</xsl:template>
 </xsl:stylesheet>
