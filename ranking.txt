@@ -1,0 +1,15 @@
+|Genre           |Summed rating |Titles
+|Action          |74.8          |Dead Cells Grand Theft Auto V Hollow Knight Mafia: The City of Lost Heaven Portal 2 Red Dead Redemtion 2 Sunset Overdrive The Legend of Zelda: Breath of the Wild
+|Adventure       |19            |Stories Untold The Walking Dead: A Telltale Games Series - Season One
+|RPG             |56.8          |Divinity: Original Sin II Final Fantasy VII The Elder Scrolls V: Skyrim Witcher 3: blood and wine Witcher 3: hearts of stone Witcher 3: wild hunt
+|Race            |18.7          |Forza Horizon Forza Horizon 4: Fortune Island
+|Simulation      |9.3           |Space Engineers
+|Strategic       |9.3           |RimWorld
+
+Statistics
+Number of genres: 6
+Number of positions: 20
+Summed ratings total: 188
+Date: 2019-04-24T20:06:13.381Z
+
+Autorzy: Krzysztof Gonicki 210189, Arkadiusz Domrat 210166
