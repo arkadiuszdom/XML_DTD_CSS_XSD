@@ -1,0 +1,160 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+   <text y="50">Genre</text>
+   <text x="100" y="50">Titles</text>
+   <text x="270" y="50">Summed rating</text>
+   <g>
+      <text y="90">Action:
+          </text>
+      <rect box_number="1"
+            class="games_box"
+            width="80"
+            height="20"
+            x="100"
+            y="75">
+         <titles titles_number="1">
+            <text>Dead Cells</text>
+            <text>Grand Theft Auto V</text>
+            <text>Hollow Knight</text>
+            <text>Mafia: The City of Lost Heaven</text>
+            <text>Portal 2</text>
+            <text>Red Dead Redemtion 2</text>
+            <text>Sunset Overdrive</text>
+            <text>The Legend of Zelda: Breath of the Wild</text>
+         </titles>
+      </rect>
+      <text y="90" x="200">8 games 
+          </text>
+      <rect width="748.9999999999999" height="20" x="270" y="75"/>
+      <text y="90" x="1039">74.8 points 
+          </text>
+   </g>
+   <g>
+      <text y="115">Adventure:
+          </text>
+      <rect box_number="2"
+            class="games_box"
+            width="20"
+            height="20"
+            x="100"
+            y="100">
+         <titles titles_number="2">
+            <text>Stories Untold</text>
+            <text>The Walking Dead: A Telltale Games Series - Season One</text>
+         </titles>
+      </rect>
+      <text y="115" x="140">2 games 
+          </text>
+      <rect width="190" height="20" x="270" y="100"/>
+      <text y="115" x="480">19 points 
+          </text>
+   </g>
+   <g>
+      <text y="140">RPG:
+          </text>
+      <rect box_number="3"
+            class="games_box"
+            width="60"
+            height="20"
+            x="100"
+            y="125">
+         <titles titles_number="3">
+            <text>Divinity: Original Sin II</text>
+            <text>Final Fantasy VII</text>
+            <text>The Elder Scrolls V: Skyrim</text>
+            <text>Witcher 3: blood and wine</text>
+            <text>Witcher 3: hearts of stone</text>
+            <text>Witcher 3: wild hunt</text>
+         </titles>
+      </rect>
+      <text y="140" x="180">6 games 
+          </text>
+      <rect width="568" height="20" x="270" y="125"/>
+      <text y="140" x="858">56.8 points 
+          </text>
+   </g>
+   <g>
+      <text y="165">Race:
+          </text>
+      <rect box_number="4"
+            class="games_box"
+            width="20"
+            height="20"
+            x="100"
+            y="150">
+         <titles titles_number="4">
+            <text>Forza Horizon</text>
+            <text>Forza Horizon 4: Fortune Island</text>
+         </titles>
+      </rect>
+      <text y="165" x="140">2 games 
+          </text>
+      <rect width="187.00000000000003" height="20" x="270" y="150"/>
+      <text y="165" x="477">18.7 points 
+          </text>
+   </g>
+   <g>
+      <text y="190">Simulation:
+          </text>
+      <rect box_number="5"
+            class="games_box"
+            width="10"
+            height="20"
+            x="100"
+            y="175">
+         <titles titles_number="5">
+            <text>Space Engineers</text>
+         </titles>
+      </rect>
+      <text y="190" x="130">1 games 
+          </text>
+      <rect width="93" height="20" x="270" y="175"/>
+      <text y="190" x="383">9.3 points 
+          </text>
+   </g>
+   <g>
+      <text y="215">Strategic:
+          </text>
+      <rect box_number="6"
+            class="games_box"
+            width="10"
+            height="20"
+            x="100"
+            y="200">
+         <titles titles_number="6">
+            <text>RimWorld</text>
+         </titles>
+      </rect>
+      <text y="215" x="130">1 games 
+          </text>
+      <rect width="93" height="20" x="270" y="200"/>
+      <text y="215" x="383">9.3 points 
+          </text>
+   </g>
+   <text x="50" y="250" fill="blue">
+      <tspan>Number of genres: 6</tspan>
+      <tspan dy="20">Number of positions: 20</tspan>
+      <tspan dy="20">Summed ratings total: 188.00000000000009</tspan>
+      <tspan dy="20">Date: 188.00000000000009</tspan>
+      <animate attributeName="x"
+               from="50"
+               to="550"
+               dur="10s"
+               begin="click"
+               fill="freeze"/>
+   </text>
+   <script type="text/javascript">
+        
+          const game_boxes = document.querySelectorAll(".games_box");
+        for(let game_box of game_boxes) {
+          game_box.addEventListener("click", function(){
+                const titles=game_box.children[0].children;
+            let titles_string="";
+                for(let title of titles) {
+                    titles_string+=title.textContent+"\n";
+              }
+            alert(titles_string);
+            });
+        }
+                
+        </script>
+</svg>
