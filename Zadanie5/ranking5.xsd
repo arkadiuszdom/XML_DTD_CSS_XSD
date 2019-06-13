@@ -1,0 +1,64 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="rankingGenreSummary">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="positionsTable">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="positionsTableHeadRow">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="positionsTableHeadGenre"/>
+                    <xs:element type="xs:string" name="positionsTableHeadTitles"/>
+                    <xs:element type="xs:string" name="positionsTableHeadSummedRating"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="positionsTableDataRow" maxOccurs="unbounded" minOccurs="0">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="positionsTableDataGenre"/>
+                    <xs:element name="positionsTableDataTitles">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element type="xs:string" name="positionsTableDataTitle" maxOccurs="unbounded" minOccurs="0"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element type="xs:float" name="positionsTableDataSummedRating"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="reportTable">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="reportTableHeadRow">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="reportTableHeadNGenres"/>
+                    <xs:element type="xs:string" name="reportTableHeadNPositions"/>
+                    <xs:element type="xs:string" name="reportTableHeadTotal"/>
+                    <xs:element type="xs:string" name="reportTableHeadDate"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="reportTableDataRow">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:byte" name="reportTableDataNGeneres"/>
+                    <xs:element type="xs:byte" name="reportTableDataNPositions"/>
+                    <xs:element type="xs:float" name="reportTableDataTotal"/>
+                    <xs:element type="xs:dateTime" name="reportTableDataDate"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

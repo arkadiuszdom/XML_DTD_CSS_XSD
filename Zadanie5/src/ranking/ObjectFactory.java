@@ -1,6 +1,8 @@
 
 package ranking;
 
+import sample.RankingGenreSummary;
+
 import javax.xml.bind.annotation.XmlRegistry;
 
 
@@ -30,91 +32,67 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link Ranking }
+     * Create an instance of {@link RankingGenreSummary }
      * 
      */
-    public Ranking createRanking() {
-        return new Ranking();
+    public RankingGenreSummary createRankingGenreSummary() {
+        return new RankingGenreSummary();
     }
 
     /**
-     * Create an instance of {@link TypeHeader }
+     * Create an instance of {@link RankingGenreSummary.ReportTable }
      * 
      */
-    public TypeHeader createTypeHeader() {
-        return new TypeHeader();
+    public RankingGenreSummary.ReportTable createRankingGenreSummaryReportTable() {
+        return new RankingGenreSummary.ReportTable();
     }
 
     /**
-     * Create an instance of {@link TypeGenres }
+     * Create an instance of {@link RankingGenreSummary.PositionsTable }
      * 
      */
-    public TypeGenres createTypeGenres() {
-        return new TypeGenres();
+    public RankingGenreSummary.PositionsTable createRankingGenreSummaryPositionsTable() {
+        return new RankingGenreSummary.PositionsTable();
     }
 
     /**
-     * Create an instance of {@link TypePositions }
+     * Create an instance of {@link RankingGenreSummary.PositionsTable.PositionsTableDataRow }
      * 
      */
-    public TypePositions createTypePositions() {
-        return new TypePositions();
+    public RankingGenreSummary.PositionsTable.PositionsTableDataRow createRankingGenreSummaryPositionsTablePositionsTableDataRow() {
+        return new RankingGenreSummary.PositionsTable.PositionsTableDataRow();
     }
 
     /**
-     * Create an instance of {@link TypeGenreColor }
+     * Create an instance of {@link RankingGenreSummary.ReportTable.ReportTableHeadRow }
      * 
      */
-    public TypeGenreColor createTypeGenreColor() {
-        return new TypeGenreColor();
+    public RankingGenreSummary.ReportTable.ReportTableHeadRow createRankingGenreSummaryReportTableReportTableHeadRow() {
+        return new RankingGenreSummary.ReportTable.ReportTableHeadRow();
     }
 
     /**
-     * Create an instance of {@link TypeNumber }
+     * Create an instance of {@link RankingGenreSummary.ReportTable.ReportTableDataRow }
      * 
      */
-    public TypeNumber createTypeNumber() {
-        return new TypeNumber();
+    public RankingGenreSummary.ReportTable.ReportTableDataRow createRankingGenreSummaryReportTableReportTableDataRow() {
+        return new RankingGenreSummary.ReportTable.ReportTableDataRow();
     }
 
     /**
-     * Create an instance of {@link TypeGenre }
+     * Create an instance of {@link RankingGenreSummary.PositionsTable.PositionsTableHeadRow }
      * 
      */
-    public TypeGenre createTypeGenre() {
-        return new TypeGenre();
+    public RankingGenreSummary.PositionsTable.PositionsTableHeadRow createRankingGenreSummaryPositionsTablePositionsTableHeadRow() {
+        return new RankingGenreSummary.PositionsTable.PositionsTableHeadRow();
     }
 
     /**
-     * Create an instance of {@link TypeAge }
+     * Create an instance of {@link RankingGenreSummary.PositionsTable.PositionsTableDataRow.PositionsTableDataTitles }
      * 
      */
-    public TypeAge createTypeAge() {
-        return new TypeAge();
-    }
-
-    /**
-     * Create an instance of {@link TypePosition }
-     * 
-     */
-    public TypePosition createTypePosition() {
-        return new TypePosition();
-    }
-
-    /**
-     * Create an instance of {@link TypePoster }
-     * 
-     */
-    public TypePoster createTypePoster() {
-        return new TypePoster();
-    }
-
-    /**
-     * Create an instance of {@link TypePredecessor }
-     * 
-     */
-    public TypePredecessor createTypePredecessor() {
-        return new TypePredecessor();
+    public RankingGenreSummary.PositionsTable.PositionsTableDataRow.PositionsTableDataTitles createRankingGenreSummaryPositionsTablePositionsTableDataRowPositionsTableDataTitles() {
+        return new RankingGenreSummary.PositionsTable.PositionsTableDataRow.PositionsTableDataTitles();
     }
 
 }

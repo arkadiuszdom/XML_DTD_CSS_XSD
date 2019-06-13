@@ -1,0 +1,81 @@
+<?xml version="1.0" standalone="no" ?>
+
+<rankingGenreSummary>
+   <positionsTable>
+      <positionsTableHeadRow>
+         <positionsTableHeadGenre>Genre</positionsTableHeadGenre>
+         <positionsTableHeadTitles>Titles</positionsTableHeadTitles>
+         <positionsTableHeadSummedRating>Summed rating</positionsTableHeadSummedRating>
+      </positionsTableHeadRow>
+      <positionsTableDataRow>
+         <positionsTableDataGenre>Action</positionsTableDataGenre>
+         <positionsTableDataTitles>
+            <positionsTableDataTitle>Dead Cells</positionsTableDataTitle>
+            <positionsTableDataTitle>Grand Theft Auto V</positionsTableDataTitle>
+            <positionsTableDataTitle>Hollow Knight</positionsTableDataTitle>
+            <positionsTableDataTitle>Mafia: The City of Lost Heaven</positionsTableDataTitle>
+            <positionsTableDataTitle>Portal 2</positionsTableDataTitle>
+            <positionsTableDataTitle>Red Dead Redemtion 2</positionsTableDataTitle>
+            <positionsTableDataTitle>Sunset Overdrive</positionsTableDataTitle>
+            <positionsTableDataTitle>The Legend of Zelda: Breath of the Wild</positionsTableDataTitle>
+         </positionsTableDataTitles>
+         <positionsTableDataSummedRating>74.89999999999999</positionsTableDataSummedRating>
+      </positionsTableDataRow>
+      <positionsTableDataRow>
+         <positionsTableDataGenre>Adventure</positionsTableDataGenre>
+         <positionsTableDataTitles>
+            <positionsTableDataTitle>Stories Untold</positionsTableDataTitle>
+            <positionsTableDataTitle>The Walking Dead: A Telltale Games Series - Season One</positionsTableDataTitle>
+         </positionsTableDataTitles>
+         <positionsTableDataSummedRating>19</positionsTableDataSummedRating>
+      </positionsTableDataRow>
+      <positionsTableDataRow>
+         <positionsTableDataGenre>RPG</positionsTableDataGenre>
+         <positionsTableDataTitles>
+            <positionsTableDataTitle>Divinity: Original Sin III</positionsTableDataTitle>
+            <positionsTableDataTitle>Final Fantasy VII</positionsTableDataTitle>
+            <positionsTableDataTitle>The Elder Scrolls V: Skyrim</positionsTableDataTitle>
+            <positionsTableDataTitle>Witcher 3: blood and wine</positionsTableDataTitle>
+            <positionsTableDataTitle>Witcher 3: hearts of stone</positionsTableDataTitle>
+            <positionsTableDataTitle>Witcher 3: wild hunt</positionsTableDataTitle>
+         </positionsTableDataTitles>
+         <positionsTableDataSummedRating>56.8</positionsTableDataSummedRating>
+      </positionsTableDataRow>
+      <positionsTableDataRow>
+         <positionsTableDataGenre>Race</positionsTableDataGenre>
+         <positionsTableDataTitles>
+            <positionsTableDataTitle>Forza Horizon</positionsTableDataTitle>
+            <positionsTableDataTitle>Forza Horizon 4: Fortune Island</positionsTableDataTitle>
+         </positionsTableDataTitles>
+         <positionsTableDataSummedRating>18.700000000000003</positionsTableDataSummedRating>
+      </positionsTableDataRow>
+      <positionsTableDataRow>
+         <positionsTableDataGenre>Simulation</positionsTableDataGenre>
+         <positionsTableDataTitles>
+            <positionsTableDataTitle>Space Engineers</positionsTableDataTitle>
+         </positionsTableDataTitles>
+         <positionsTableDataSummedRating>9.3</positionsTableDataSummedRating>
+      </positionsTableDataRow>
+      <positionsTableDataRow>
+         <positionsTableDataGenre>Strategic</positionsTableDataGenre>
+         <positionsTableDataTitles>
+            <positionsTableDataTitle>RimWorld</positionsTableDataTitle>
+         </positionsTableDataTitles>
+         <positionsTableDataSummedRating>9.3</positionsTableDataSummedRating>
+      </positionsTableDataRow>
+   </positionsTable>
+   <reportTable>
+      <reportTableHeadRow>
+         <reportTableHeadNGenres>Number of genres</reportTableHeadNGenres>
+         <reportTableHeadNPositions>Number of positions</reportTableHeadNPositions>
+         <reportTableHeadTotal>Summed ratings total</reportTableHeadTotal>
+         <reportTableHeadDate>Date</reportTableHeadDate>
+      </reportTableHeadRow>
+      <reportTableDataRow>
+         <reportTableDataNGeneres>6</reportTableDataNGeneres>
+         <reportTableDataNPositions>20</reportTableDataNPositions>
+         <reportTableDataTotal>188.00000000000009</reportTableDataTotal>
+         <reportTableDataDate>2019-04-24T20:06:13.381Z</reportTableDataDate>
+      </reportTableDataRow>
+   </reportTable>
+</rankingGenreSummary>
